@@ -40,6 +40,10 @@ body div.container-fluid {
   .main-heading{
     margin-top: 30px;
   }
+  .fix_sifaris{
+      border-radius: 50px;
+      background: none;
+  }
   .fix_sifaris:hover{
     text-decoration: none;
   }
