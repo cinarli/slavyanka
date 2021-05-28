@@ -19,6 +19,15 @@
     
     
 <div class="container-fluid">
+    <img style="background-repeat: no-repeat;" width="100%" class="back_img" src="./img/website/mountain.png" alt="">
+    <img style="top: -100px" class="clouds" width="1000" height="500" id="cloud_1" src="./img/website/cloud1.png">
+    <img style="left: -1000px" class="clouds"width="1000" height="400" id="cloud_2" src="./img/website/cloud2.png">
+    <img style="top: 200px;" class="clouds"width="1000" height="400" id="cloud_2" src="./img/website/m_merged.png">
+    <img style="top: 200px;" class="clouds" width="500" height="300" id="cloud_3" src="./img/website/cloud3.png"> 
+    
+    
+    
+    
     <div class="row">
     
         <div class="col-md-12 logo_div">
@@ -38,7 +47,7 @@
         <div class="col-md-12">
             <div class="text-center">
 
-            <a id="myImg" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+            <a class="fix_sifaris" type="button" target="_blank" href="https://wa.me/994554572121">
                 <span class="sifaris">
                     <i class="bi bi-whatsapp whatsapp-icon"></i> 19L SU SİFARİŞ ET
                 </span>
@@ -47,22 +56,51 @@
             </div>
         </div>
         <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal" style="display: block;">
 
             <!-- The Close Button -->
             <div class="div-modal-content">
             <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
         
             <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-            
+            <img class="modal-content rounded-circle"  src="./img/website/popup.png" id="img01">
+            <div class="sifaris2121">
+                <span id="number">*2121</span><br>
+                <span id="text_">Sifariş üçün</span>
+            </div>
+            <div class="popup_content">
+                <p class="popup_number">
+                <span class="whatsapp_logo">
+                    <i class="bi bi-whatsapp whatsapp-icon"></i>
+                </span>
+                <span class="whatsapp_number"> 055 457 21 21</span> 
+            </p>
+                
+                <ul class="popup_ul">
+                    <li class="social social-li">
+                        <a class="btn social-logo" target="_blank" href="https://www.facebook.com/Slavyanka.az/" role="button">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social">
+                        <a class="btn social-logo" target="_blank" href="https://www.instagram.com/slavyanka_az/" role="button">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="social">
+                        <a class="btn social-logo" href="#!" role="button">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <!-- Modal Caption (Image Text) -->
             <div id="caption">
                 <!-- mobile -->
-                <!-- <a href="https://api.whatsapp.com/send?phone=15551234567"> -->
-                    <a class="whatsapp_link"  target="_blank" href="https://wa.me/994554572121">
+                    <a class="whatsapp_link"  target="_blank" href="https://api.whatsapp.com/send?phone=994554572121">
                     <span class="sifaris">
-                        <i class="bi bi-whatsapp whatsapp-icon"></i> 19L SU SİFARİŞ ET
+                        <i class="bi bi-whatsapp whatsapp-icon"></i> SİFARİŞ ET
                     </span>
                 </a>
             </div>
@@ -86,7 +124,7 @@
                             </a>
                         </li>
                         <li class="social">
-                            <a class="btn social-logo" target="_blank" href="http://instagram.com/_u/{slavyanka_az}/" role="button">
+                            <a class="btn social-logo" target="_blank" href="https://www.instagram.com/slavyanka_az/" role="button">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
@@ -104,7 +142,7 @@
     </div>
     <!-- small screen -->
     <div class="row message_row">
-        <div class="d-block d-sm-none">
+        <div>
             <div class="sm-social">
                 <ul>
                     <li>
@@ -118,7 +156,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="btn sm-icons sm-icon-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=994554572121" role="button">
+                        <a class="btn sm-icons sm-icon-whatsapp" target="_blank"  href="https://wa.me/994554572121" role="button">
                             <i class="fa fa-whatsapp"></i>
                         </a>
                     </li>
@@ -133,13 +171,9 @@
     </div>
     
 </div>
-<!-- ----------- -->
-
-<!-- --------------- -->
 
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="./static/js/image_modal.js"></script>
@@ -147,6 +181,7 @@
     $( ".sm-icon-message" ).click(function() {
       $( ".sm-social" ).toggle( "slow" );
     });
+   
     </script>
 </body>
 </html>
