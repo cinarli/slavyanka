@@ -40,11 +40,25 @@ body div.container-fluid {
   .main-heading{
     margin-top: 30px;
   }
+  .sifaris_content{
+    background-color: #26C75D;
+    color:white;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    padding: 5px 3px;
+    font-size: 20px;
+    width: 230px;
+  }
   .fix_sifaris{
+      color: white;
       text-decoration: none;
   }
+
   .fix_sifaris:hover{
-    text-decoration: none
+    text-decoration: none;
+    color: white;
 }
 .fix_sifaris:link {
     text-decoration: none;
@@ -56,14 +70,7 @@ body div.container-fluid {
   .whatsapp-sifaris{
       margin-top: 100px;
   }
-  .whatsapp-sifaris .sifaris{
-    background-color: #26C75D;
-    color:white;
-    height: 20px;
-    border-radius: 25px;
-    padding: 10px;
-    font-size: 20px;
-  }
+ 
   #caption span.sifaris{
     background-color: white;
     color:black;
