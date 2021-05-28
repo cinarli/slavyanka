@@ -1,29 +1,52 @@
 html, body{
     height: 100%;
+    
 }
 
 body div.container-fluid {
     /* The image used */
-    background-image: url("../../img/website/mountain-1209497_1920.jpg");
-  
+    /* background-image: url("../../img/website/mountain.png"); */
+    overflow: hidden;
     /* Full height */
     height: 100%; 
-  
+  /* z-index: 0; */
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background: linear-gradient(180deg, #A0CFFF 17.71%, #CEE6FF 54.69%, #DCEDFF 68.75%, #FAFDFF 100%);
   
   }
-  
+  body div.container-fluid .clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 25s;
+  }
+  body div.container-fluid .back_img{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-repeat: no-repeat;
+  }
+ 
+
+
+
+
   .main-heading{
     margin-top: 30px;
+  }
+  .fix_sifaris:hover{
+    text-decoration: none;
   }
   .whatsapp-sifaris{
       margin-top: 100px;
   }
-  span.sifaris{
+  .whatsapp-sifaris .sifaris{
     background-color: #26C75D;
     color:white;
     height: 20px;
@@ -31,8 +54,17 @@ body div.container-fluid {
     padding: 10px;
     font-size: 20px;
   }
-  span.sifaris i.whatsapp-icon{
+  #caption span.sifaris{
+    background-color: white;
+    color:black;
+    height: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  #caption span.sifaris i.whatsapp-icon{
       font-size: 24px;
+      color: #26C75D;
   }
   .musteri-xidmeti{
       margin-top: 100px;
@@ -89,18 +121,79 @@ body div.container-fluid {
   /* --------------- */
 /* Style the Image Used to Trigger the Modal */
 .div-modal-content{
-    width: 300px;
+    width: 500px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
     
 }
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+.div-modal-content img{
+    width:500px; 
+    height:500px;
 }
+.popup_content{
+    position: relative;
+}
+.sifaris2121{
+    position: absolute;
+    top: 270px;
+    right: 45px;
+}
+.sifaris2121 #number{
+    background-color: #FFE5E0;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 100px;
+    color: #CF2720;
+    font-size: 32px;
+    font-weight: 700;
 
+}
+.sifaris2121 #text_{
+    position: absolute;
+    color:white;
+    right:10px;
+}
+.popup_content .popup_number{
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+}
+.popup_content .popup_number span.whatsapp_logo{
+    padding: 0;
+    /* background-color: #26C75D; */
+    color: #26C75D; 
+}
+.popup_content .popup_number span.whatsapp_logo i{
+    font-size: 26px;
+    font-weight: bold;
+}
+.popup_content .popup_number span.whatsapp_number{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.popup_ul{
+    position: absolute;
+    bottom: 24px;
+    left: 135px;
+}
+.popup_ul li{
+    list-style-type: none;
+    float: left;
+    margin-left: 10px;
+}
+.popup_content .popup_ul .social-logo{
+ padding: 0 10px;
+ font-size: 22px;
+}
+#myModal{
+    padding: 0;
+}
+#myModal > div > div.popup_content > ul > li:nth-child(3) > a{
+    padding: 0 6px;
+}
 #myImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
@@ -115,7 +208,7 @@ body div.container-fluid {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -137,7 +230,7 @@ body div.container-fluid {
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
+    height: 50px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -177,11 +270,10 @@ body div.container-fluid {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
     }
-}
+
 .update_modal_img{
     width: 300px;
     height: 300px;
@@ -237,7 +329,7 @@ body div.container-fluid {
     font-size: 22px;
     padding: 5px 14px;
 }
-.sm-icon-whatsapp{
+.sm-icon-whatsapp {
     background-color: #26C75D;
     font-size: 28px;
     padding: 0px 10px;
@@ -247,5 +339,121 @@ body div.container-fluid {
     background-color: #F4420A;
     font-size: 28px;
     padding: 0px 10px;
+
+}
+@media (max-width:641px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    .div-modal-content{
+        width: 300px;
+        margin-top: 100px;
+    }
+    .div-modal-content img{
+        width:300px; 
+        height:300px;
+    }
+    .close{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .popup_ul{
+        padding: 0;
+        margin: 0;
+   
+        bottom: 24px;
+        left: 105px;
+    }
+    .popup_ul li{
+        margin-left: 5;
+    }
+    .popup_content .popup_number{
+        position: absolute;
+        bottom: 48px;
+        left: 100px;
+        margin: 0px;
+    }
+    .popup_content .popup_number span.whatsapp_number{
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 8px;
+    }
+    .popup_content .popup_number span.whatsapp_logo i{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .social-logo{
+        padding: 4px 6px!important;
+        border: none;
+        line-height: 0.2;
+        /* height: 10px; */
+        /* font-size: 14px; */
+        background-color: #273349;
+        
+        /* border-radius: 50px; */
+    }
+    /* .social-logo a{
+        padding: 0;
+    } */
+    .social-logo i{
+      color: white;
+      font-size: 10px;
+    }
+    .sifaris2121{
+        width: auto;
+        top: 140px;
+        right: 30px;
+    }
+    .sifaris2121 #number{
+        background-color: #FFE5E0;
+        display: inline-block;
+        padding: 2px 7px;
+        border-radius: 100px;
+        color: #CF2720;
+        font-size: 18px;
+        font-weight: 700;
+    
+    }
+    .sifaris2121 #text_{
+        position: absolute;
+        color:white;
+        font-size: 12px;
+        right: -38px;
+        width: 100px;
+    }
+    .main-heading{
+        font-size: 20px;
+    }
+    .message_row{
+        display: inline-block;
+    }
+    .musteri-xidmeti{
+        display: none;
+    }
+    
+}
+@media (min-width:642px)  {
+    .message_row{
+        display: none;
+    }
+    .musteri-xidmeti{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    
+  @-webkit-keyframes run {
+    0% {
+      left: 100%;
+    }
+    
+    50% {
+      left: 0%;
+    }
+   
+    100% {
+        left: -100%;
+    }
+}
 
 }
