@@ -43,6 +43,7 @@ body div.container-fluid {
   .fix_sifaris{
       border-radius: 50px;
       background: none;
+      padding:0px 5px;
   }
   .fix_sifaris:hover{
     text-decoration: none;
