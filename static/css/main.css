@@ -41,13 +41,10 @@ body div.container-fluid {
     margin-top: 30px;
   }
   .fix_sifaris{
-      border-radius: 50px;
-      background: none;
-      padding:0px 5px;
+      /* border-radius: 50px; */
+      text-decoration: none;
   }
-  .fix_sifaris:hover{
-    text-decoration: none;
-  }
+ 
   .whatsapp-sifaris{
       margin-top: 100px;
   }
