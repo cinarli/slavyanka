@@ -1,0 +1,251 @@
+html, body{
+    height: 100%;
+}
+
+body div.container-fluid {
+    /* The image used */
+    background-image: url("../../img/website/mountain-1209497_1920.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+  
+  .main-heading{
+    margin-top: 30px;
+  }
+  .whatsapp-sifaris{
+      margin-top: 100px;
+  }
+  span.sifaris{
+    background-color: #26C75D;
+    color:white;
+    height: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  span.sifaris i.whatsapp-icon{
+      font-size: 24px;
+  }
+  .musteri-xidmeti{
+      margin-top: 100px;
+  }
+  .p-musteri{
+    line-height:1;
+
+
+  }
+  .musteri-xidmeti ul{
+      position: relative;
+  }
+  .musteri-xidmeti ul li{
+      list-style-type: none;
+      float: left;
+      
+  }
+  body > div > div.row.justify-content-center.musteri-xidmeti > div > ul > li:nth-child(2){
+      position: relative;
+      bottom: 12px;
+      right: 0;
+  }
+   .musteri-xidmeti ul li.social{
+    padding-left: 10px;
+    margin-left: 10px;
+   }
+   .musteri-xidmeti ul li.social-li{
+      border-left: 2px solid black;
+  }
+  .musteri-title{
+      font-size: 20px;
+      width: 80px;
+      display: inline-block;
+  }
+  .nomre{
+      
+      font-size: 40px;
+      color: red;
+      font-weight: bold;
+  }
+  .social-logo{
+      padding: 1px 8px;
+      font-size: 20px;
+      background-color: #273349;
+      border-radius: 50px;
+  }
+  .social-logo i{
+    color: white;
+  }
+  .right{
+      float: left;
+  }
+
+  /* --------------- */
+/* Style the Image Used to Trigger the Modal */
+.div-modal-content{
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    /* position: relative; */
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.update_modal_img{
+    width: 300px;
+    height: 300px;
+}
+.whatsapp_link:hover{
+    text-decoration: none
+}
+.whatsapp_link:link {
+    text-decoration: none;
+  }
+  
+ .whatsapp_link:visited {
+    text-decoration: none;
+  }
+
+/* small screen */
+.message_row{
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+}
+.message_row .col-md-12{
+    padding: 0px;
+}
+.sm-social{
+    display: none;
+}
+.sm-social ul{
+    padding: 0;
+}
+.sm-social ul li{
+    list-style-type: none;
+    margin-top: 10px;
+
+}
+.sm-icons{
+    display: inline-block;
+    border-radius: 50px;
+}
+.sm-icons i{
+    color: white;
+}
+.sm-icon-message{
+    background-color: red; 
+    font-size: 24px;
+    padding: 5px 10px;
+    padding-top: 2px;
+    margin-top: 10px;
+}
+
+.sm-icon-facebook{
+    background-color: #0085FF;
+    font-size: 22px;
+    padding: 5px 14px;
+}
+.sm-icon-whatsapp{
+    background-color: #26C75D;
+    font-size: 28px;
+    padding: 0px 10px;
+
+}
+.sm-icon-instagram{
+    background-color: #F4420A;
+    font-size: 28px;
+    padding: 0px 10px;
+
+}
